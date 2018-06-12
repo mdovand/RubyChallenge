@@ -6,10 +6,7 @@ require_relative 'card'
 options = {}
 result = {}
 
-#JSON import
-fichier=File.read("input.json")
-data_cards=JSON.parse(fichier)["loyalty_cards"]
-data_rewards=JSON.parse(fichier)["rewards"]
+
 
 OptionParser.new do |opt|
   opt.on('--user_id USER_ID') { |o| options[:user_id] = o }

@@ -27,7 +27,7 @@ class User
     cards.push(card)
   end
 
-  def card_from_id(id)
+  def card_from_id(id) # return card from id
     cards.each do |card|
       if card.card_id == id
         return card
@@ -36,7 +36,7 @@ class User
     return nil
   end
 
-  def total_points
+  def total_points # calculate user total points
     total = 0
     cards.each do |card|
       total = total + card.card_total_points
